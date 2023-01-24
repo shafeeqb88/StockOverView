@@ -40,7 +40,6 @@ class ViewController: UIViewController {
         
         graphicsOverlay.graphics.add(pointGraphic)
         
-        
         let polyline = AGSPolyline(
             points: [
                 AGSPoint(x: -118.821527826096, y: 34.0139576938577, spatialReference: .wgs84()),
@@ -54,7 +53,6 @@ class ViewController: UIViewController {
         let polylineGraphic = AGSGraphic(geometry: polyline, symbol: polylineSymbol)
         
         graphicsOverlay.graphics.add(polylineGraphic)
-        
         
         let polygon = AGSPolygon(
             points: [
