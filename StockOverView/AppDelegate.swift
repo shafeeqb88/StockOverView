@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        ArcGISEnvironment.apiKey = APIKey("AAPK5631edd454de4a8a8b1464907b80a181P6pLCJ0bRuYfvZpPeiTCml3bDAG1nrJeo2N-Wtpzfy7OeaoTz4mW41owDQXPWwSJ")
+        AGSArcGISRuntimeEnvironment.apiKey = "AAPK5631edd454de4a8a8b1464907b80a181P6pLCJ0bRuYfvZpPeiTCml3bDAG1nrJeo2N-Wtpzfy7OeaoTz4mW41owDQXPWwSJ"
         
         return true
     }

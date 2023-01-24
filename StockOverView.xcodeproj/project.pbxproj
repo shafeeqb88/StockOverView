@@ -17,7 +17,10 @@
 		3C73940D297EF6B700B12B4A /* StockOverViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C73940C297EF6B700B12B4A /* StockOverViewTests.swift */; };
 		3C739417297EF6B700B12B4A /* StockOverViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C739416297EF6B700B12B4A /* StockOverViewUITests.swift */; };
 		3C739419297EF6B700B12B4A /* StockOverViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C739418297EF6B700B12B4A /* StockOverViewUITestsLaunchTests.swift */; };
-		3C739427297EF71F00B12B4A /* ArcGIS in Frameworks */ = {isa = PBXBuildFile; productRef = 3C739426297EF71F00B12B4A /* ArcGIS */; };
+		3CC61714297FB56200E389E9 /* ArcGIS.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC61712297FB56200E389E9 /* ArcGIS.xcframework */; };
+		3CC61715297FB56200E389E9 /* ArcGIS.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC61712297FB56200E389E9 /* ArcGIS.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3CC61716297FB56200E389E9 /* Runtimecore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC61713297FB56200E389E9 /* Runtimecore.xcframework */; };
+		3CC61717297FB56200E389E9 /* Runtimecore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC61713297FB56200E389E9 /* Runtimecore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3CC61718297FB56200E389E9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3CC61715297FB56200E389E9 /* ArcGIS.xcframework in Embed Frameworks */,
+				3CC61717297FB56200E389E9 /* Runtimecore.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3C7393EF297EF6B500B12B4A /* StockOverView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockOverView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7393F2297EF6B500B12B4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +70,8 @@
 		3C739412297EF6B700B12B4A /* StockOverViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockOverViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C739416297EF6B700B12B4A /* StockOverViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockOverViewUITests.swift; sourceTree = "<group>"; };
 		3C739418297EF6B700B12B4A /* StockOverViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockOverViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CC61712297FB56200E389E9 /* ArcGIS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ArcGIS.xcframework; path = ../../Library/SDKs/ArcGIS/Frameworks/ArcGIS.xcframework; sourceTree = "<group>"; };
+		3CC61713297FB56200E389E9 /* Runtimecore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Runtimecore.xcframework; path = ../../Library/SDKs/ArcGIS/Frameworks/Runtimecore.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C739427297EF71F00B12B4A /* ArcGIS in Frameworks */,
+				3CC61714297FB56200E389E9 /* ArcGIS.xcframework in Frameworks */,
+				3CC61716297FB56200E389E9 /* Runtimecore.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +108,7 @@
 				3C73940B297EF6B700B12B4A /* StockOverViewTests */,
 				3C739415297EF6B700B12B4A /* StockOverViewUITests */,
 				3C7393F0297EF6B500B12B4A /* Products */,
+				3CC61711297FB56100E389E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +154,15 @@
 			path = StockOverViewUITests;
 			sourceTree = "<group>";
 		};
+		3CC61711297FB56100E389E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CC61712297FB56200E389E9 /* ArcGIS.xcframework */,
+				3CC61713297FB56200E389E9 /* Runtimecore.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +173,7 @@
 				3C7393EB297EF6B500B12B4A /* Sources */,
 				3C7393EC297EF6B500B12B4A /* Frameworks */,
 				3C7393ED297EF6B500B12B4A /* Resources */,
+				3CC61718297FB56200E389E9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,7 +181,6 @@
 			);
 			name = StockOverView;
 			packageProductDependencies = (
-				3C739426297EF71F00B12B4A /* ArcGIS */,
 			);
 			productName = StockOverView;
 			productReference = 3C7393EF297EF6B500B12B4A /* StockOverView.app */;
@@ -224,7 +255,6 @@
 			);
 			mainGroup = 3C7393E6297EF6B500B12B4A;
 			packageReferences = (
-				3C739425297EF71F00B12B4A /* XCRemoteSwiftPackageReference "arcgis-maps-sdk-swift" */,
 			);
 			productRefGroup = 3C7393F0297EF6B500B12B4A /* Products */;
 			projectDirPath = "";
@@ -614,25 +644,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		3C739425297EF71F00B12B4A /* XCRemoteSwiftPackageReference "arcgis-maps-sdk-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/esri/arcgis-maps-sdk-swift";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		3C739426297EF71F00B12B4A /* ArcGIS */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3C739425297EF71F00B12B4A /* XCRemoteSwiftPackageReference "arcgis-maps-sdk-swift" */;
-			productName = ArcGIS;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3C7393FB297EF6B500B12B4A /* StockOverView.xcdatamodeld */ = {
